@@ -1,60 +1,47 @@
-# ST10513367-JAVAPOE-PART2
-# Programming Assignment -  Registration, Login and QuickChat
+# ST10513367-JAVAPOE-PART3
+# QuickChat Application – Java POE
 
-## Description
-This console-based Java application implements the Registration and Login Feature from Part 1 and the QuickChat messaging functionality developed in Part 2.
+## Project Description
+QuickChat is a Java-based messaging application developed using NetBeans. It allows users to register and log in before accessing the messaging menu.
 
-# Java #Registration #Login #QuickChat #ConsoleApplication
+The application allows users to send, store and disregard messages. It also provides features for searching and managing messages.
 
 ## Features
-- Username validation
-- Password complexity validation
-- South African cellphone validation using a regular expression
-- User registration
-- User login
-- QuickChat menu with options to send messages, display recently sent messages and quit
-- Message validation
-= Message ID generation
-- Message hash generation
-- Sending, disregarding and storing messages
-- Displaying recently sent messages
-- Storing message information in a JSON file
-- JUnit unit tests
-- Automated testing using GitHub Actions
-
-## Test data from the assignment
-- Valid username: `kyl_1`
-- Invalid username: `kyle!!!!!!!`
-- Valid password: `Ch&!!sec@ke99!`
-- Invalid password: `password`
-- Valid cell phone: `+27838968976`
-- Invalid cell phone: `08966553`
-
-## Running
-Run `ProgrammingAssignment.java` as a console application.
-
-Run `LoginTest.java` using JUnit 5 in NetBeans.
-
-To run the automated tests using Maven, open a terminal in the project directory and execute:
-
-mvn test
-
-## GitHub Actions
-
-The project is intended to use GitHub Actions to run automated tests when changes are pushed to the repository or a pull request is created.
-
-Check the Actions tab in the GitHub repository to confirm that the workflow runs successfully.
+- User registration and login.
+- Username, password and South African cellphone number validation.
+- Sending messages.
+- Disregarding messages.
+- Storing messages in a JSON file.
+- Displaying recently sent messages.
+- Displaying stored messages.
+- Finding the longest message.
+- Searching for a message using its ID.
+- Searching for messages by recipient.
+- Deleting messages using their message hash.
 
 ## Technologies used
 - Java
 - Apache NetBeans
-- Apache Maven
-- JUnit 4.13.2
-- GitHub Actions
+- Maven
+- JUnit 4
+- Gson
+- GitHub
 
-## Note
+## How to Run the Application
 
-The application was developed in stages as part of the programming assignment. It uses console input only and does not use a graphical user interface or JOptionPane. Features and tests should be checked against the relevant assignment requirements before submission.
+1. Clone or download the project from GitHub.
+2. Open the project in NetBeans.
+3. Allow Maven to load the project dependencies.
+4. Run Programmingassignmentpart1.java.
+5. Register or log in to access QuickChat.
+
+## Testing
+
+JUnit tests are included for the login and message functionality. Maven is used to run the tests.
+
+To run the tests, use:
+
+mvn test
 
 ## References
 
@@ -87,5 +74,7 @@ The application was developed in stages as part of the programming assignment. I
    Accessed: 17 September 2026.
 
 8. W3Schools. (n.d.). *Java String Methods Reference*. Available at: https://www.w3schools.com/java/java_ref_string.asp (Accessed: 19 October 2026).
+
+9. W3Schools (2026) Java Tutorial. Available at: https://www.w3schools.com/java/ (Accessed: 19 November 2026).
 
 # ProgrammingAssignment #SoftwareDevelopment #JavaProject #JUnit #GitHubActions
