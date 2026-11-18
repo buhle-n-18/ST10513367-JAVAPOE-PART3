@@ -22,6 +22,11 @@ jobs:
           distribution: temurin
           java-version: '26'
 
-      - name: Compile and run tests
+      - name: Check project files
         run: |
-          mvn -B test
+          pwd
+          ls -la
+          find . -name pom.xml
+
+      - name: Compile and run tests
+        run: mvn -B -f pom.xml test
